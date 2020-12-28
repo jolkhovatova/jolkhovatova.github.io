@@ -39,6 +39,11 @@ body {
     color: var(--black);
 }
 
+.text-center{
+    text-align: center;
+
+}
+
 .text-uppercase {
     text-transform: uppercase;
 }
@@ -62,6 +67,11 @@ a:hover {
     text-align: center;
     font-size: 1.1em;
     line-height: 1.5;;
+}
+
+.btn-sm{
+    padding: 1rem;
+    font-size: 1.5rem;
 }
 
 .btn-dark {
@@ -102,6 +112,11 @@ a:hover {
 
 img{
     display: block;
+    width: 100%;
+}
+
+.img-fluid{
+    max-width: 100%;
 }
 
 .my-3{
@@ -127,6 +142,9 @@ img{
 
 .row{
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .col{
@@ -147,16 +165,17 @@ img{
 }
 
 .col-4{
-    max-width: calc(4*100%/12);
+    /*max-width: calc(4*100%/12);*/
+    width: calc(4*100%/12);
 }
 
-/*.col-5{*/
-/*    max-width: calc(6*100%/12);*/
-/*}*/
+.col-5{
+    max-width: calc(6*100%/12);
+}
 
-/*.col-6{*/
-/*    max-width: calc(6*100%/12);*/
-/*}*/
+.col-6{
+    max-width: calc(50%);
+}
 
 .float-left{
     float: left;
@@ -172,6 +191,14 @@ img{
     display: block;
     height: 0;
     visibility: hidden;
+}
+
+.list-inline{
+    list-style: none;
+}
+
+.list-inline-item{
+    display: inline-block;
 }
 
 nav{
