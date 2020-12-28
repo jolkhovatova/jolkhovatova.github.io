@@ -1,0 +1,9 @@
+:root {
+
+    --black: rgba(2, 2, 2, 0.9);
+    --white:#aaa;
+
+    --font-primary:'Roboto', sans-serif;
+
+    /*--font-sive-default: calc(var());*/
+}
