@@ -1,7 +1,7 @@
 'use strict';
 
-let a = Number(prompt('Enter a: ', ''));
-let b = Number(prompt('Enter b: ', ''));
+let a = Number(prompt('Enter number: ', ''));
+let b = Number(prompt('Enter number: ', ''));
 if (isNaN(a) && isNaN(b)) {
     alert('a or b is not a number')
 } else {
