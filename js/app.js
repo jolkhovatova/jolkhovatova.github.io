@@ -34,3 +34,5 @@ if (isNaN(a) && isNaN(b)) {
 
 
 
+let test = "test";
+alert(test);
