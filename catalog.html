@@ -2,17 +2,354 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>catalog</title>
+    <!--viewport-->
+    <title>my store</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/variables.css" rel="stylesheet">
+
+
 </head>
 <body>
-<!-- navigation -->
-<ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="catalog.html">Catalog</a></li>
-    <li><a href="contacts.html">Contacts</a></li>
-</ul>
-<h1>Catalog Us</h1>
 
+<!-- navigation -->
+<header class="bg-white">
+    <nav id="nav">
+        <div class="navbar" id="navbar">
+            <div class="navbar-brand">
+                <a href=""><span class="text-dark text-uppercase font-weight-bold">My Store</span></a>
+            </div>
+
+            <ul class="navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+
+            <ul class="navbar-tool">
+                <li><a href="#" title="Shopping cart"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#" title="Likes"><i class="far fa-thumbs-up"></i></a></li>
+                <li><a href="#" title="Login"><i class="fas fa-sign-in-alt"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+
+
+<div class="container">
+    <section class="bg-gray my-3">
+        <header>
+            <!-- header -->
+            <p>тут что-то будет</p>
+            <h2>brows our categories</h2>
+        </header>
+        <!-- carousel -->
+        <div class="row">
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="carousel-item">
+                        <a href="" class="category-item">
+                            <img src="img/2.jpg" height="100" width="250">
+                            <strong class="category-item-title">Clothes</strong>
+                        </a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/2.jpg" height="100" width="250">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/2.jpg" height="100" width="250">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/2.jpg" height="100" width="250">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/2.jpg" height="100" width="250">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/2.jpg" height="100" width="250">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/2.jpg" height="100" width="250">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/2.jpg" height="100" width="250">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="row">
+        <div class="col col-3 order-2">
+            <h2>Sidebar</h2>
+        </div>
+        <div class="col col-9 order-1">
+            <section class="py-5">
+                <header>
+                    <!-- header -->
+
+                    <p class="text-muted text-uppercase mb-1">заголовок</p>
+                    <h1 class="text-uppercase mb-4">top products</h1>
+                    <!--            <img src="img/2.jpg">-->
+
+                    <div class="row">
+                        <!-- catalog -->
+
+                        <div class="product col col-3 text-center">
+                            <div>
+                                <img src="img/2.jpg" class="img-fluid">
+                                <div class="text-center">
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm">
+                                                <i class="far fa-thumbs-up"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm">
+                                                <i class="fas fa-cart-arrow-down"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm">
+                                                <i class="fas fa-expand"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>Test product</h3>
+                            <p class="text-muted">$17</p>
+                        </div>
+
+                        <div class="product col col-3 text-center">
+                            <div class="text-center">
+                                <img src="img/2.jpg" class="img-fluid">
+                                <div>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i class="far fa-thumbs-up"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i
+                                                    class="fas fa-cart-arrow-down"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i class="fas fa-expand"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>Test product</h3>
+                            <p class="text-muted">$17</p>
+                        </div>
+
+                        <div class="product col col-3 text-center">
+                            <div class="text-center">
+                                <img src="img/2.jpg" class="img-fluid">
+                                <div>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i class="far fa-thumbs-up"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i
+                                                    class="fas fa-cart-arrow-down"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i class="fas fa-expand"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>Test product</h3>
+                            <p class="text-muted">$17</p>
+                        </div>
+
+                        <div class="product col col-3 text-center">
+                            <div class="text-center">
+                                <img src="img/2.jpg" class="img-fluid">
+                                <div>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i class="far fa-thumbs-up"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i
+                                                    class="fas fa-cart-arrow-down"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i class="fas fa-expand"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>Test product</h3>
+                            <p class="text-muted">$17</p>
+                        </div>
+
+                        <div class="product col col-3 text-center">
+                            <div class="text-center">
+                                <img src="img/2.jpg" class="img-fluid">
+                                <div>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i class="far fa-thumbs-up"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i
+                                                    class="fas fa-cart-arrow-down"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i class="fas fa-expand"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>Test product</h3>
+                            <p class="text-muted">$17</p>
+                        </div>
+
+                        <div class="product col col-3 text-center">
+                            <div class="text-center">
+                                <img src="img/2.jpg" class="img-fluid">
+                                <div>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i class="far fa-thumbs-up"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i
+                                                    class="fas fa-cart-arrow-down"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i class="fas fa-expand"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>Test product</h3>
+                            <p class="text-muted">$17</p>
+                        </div>
+
+                        <div class="product col col-3 text-center">
+                            <div class="text-center">
+                                <img src="img/2.jpg" class="img-fluid">
+                                <div>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i class="far fa-thumbs-up"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i
+                                                    class="fas fa-cart-arrow-down"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i class="fas fa-expand"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>Test product</h3>
+                            <p class="text-muted">$17</p>
+                        </div>
+
+                        <div class="product col col-3 text-center">
+                            <div class="text-center">
+                                <img src="img/2.jpg" class="img-fluid">
+                                <div>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i class="far fa-thumbs-up"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i
+                                                    class="fas fa-cart-arrow-down"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="" class="bnt btn-sm"><i class="fas fa-expand"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3>Test product</h3>
+                            <p class="text-muted">$17</p>
+                        </div>
+
+
+                    </div>
+                </header>
+            </section>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container py-4">
+        <div class="row py-5">
+            <div class="col col-4 mb-3">
+                <h3>Service</h3>
+                <ul class="list-unstyled">
+                    <li class="footer-link">Help</li>
+                    <li class="footer-link">Help</li>
+                    <li class="footer-link">Help</li>
+                    <li class="footer-link">Help</li>
+                    <li class="footer-link">Help</li>
+                </ul>
+            </div>
+
+            <div class="col col-4 mb-3">
+                <h3>Company</h3>
+                <ul class="list-unstyled">
+                    <li class="footer-link">What we do</li>
+                    <li class="footer-link">Help</li>
+                    <li class="footer-link">Help</li>
+                    <li class="footer-link">Help</li>
+                    <li class="footer-link">Help</li>
+                </ul>
+            </div>
+
+            <div class="col col-4">
+                <h3>Social Media</h3>
+                <ul class="list-unstyled">
+                    <li class="footer-link"><i class="fab fa-instagram"></i>Instagram</li>
+                    <li class="footer-link"><i class="fab fa-facebook">Facebook</i></li>
+                    <li class="footer-link"><i class="fab fa-twitter">Twitter</i></li>
+                    <li class="footer-link"><i class="fab fa-tiktok">Tiktok</i></li>
+                    <li class="footer-link"><i class="fab fa-google-plus">Google</i></li>
+                    <li class="footer-link"><i class="fab fa-linkedin">Linkedin</i></li>
+                </ul>
+            </div>
+
+            <div class="border-top pt-4 row">
+                <div class="col col-6">
+                    <p>&COPY;2021 All rights reserved.</p>
+                </div>
+                <div class="col col-6">
+                    <p>&COPY;2021 All rights reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--    <script src="js/app.js"></script>-->
+<script src="js/product.js"></script>
 
 </body>
 </html>
