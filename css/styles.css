@@ -32,7 +32,7 @@ body {
 }
 
 .text-dark {
-    color: darkslategrey;
+    color: dimgray;
 }
 
 .text-muted{
@@ -75,10 +75,10 @@ a:hover {
 }
 
 .btn-dark {
-    color: var(--white);
+    color: white;
     background-color: darkslategrey;
-    padding: 1em 1.5em;
-    border: gray solid 2px;
+    padding: 0.5em 1em;
+    border: gray solid 1px;
     border-radius: 6px;
 }
 
@@ -86,7 +86,6 @@ a:hover {
     color: chartreuse;
     background-color: var(--black);
     text-decoration: none;
-    border: blue solid 2px;
 }
 
 .bg-white {
@@ -96,21 +95,6 @@ a:hover {
 .bg-gray{
     background-color: khaki;
 }
-
-.hero {
-    background-image: url("../img/2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    /*min-height: 100vh;*/
-    min-height: 15em;
-    height: 20em;
-}
-
-.hero header{
-    padding: 8em 40% 8em 40%;
-}
-
 
 img{
     display: block;
@@ -131,10 +115,49 @@ img{
 }
 
 /*footer*/
+
 .footer{
     padding: 6em;
     background-color: darkgray;
     color: white;
+}
+
+.footer-link{
+    cursor:pointer;
+}
+
+.footer-link:hover,
+.footer-link:focus{
+    transform: translateX(0.2rem);
+}
+
+.social-instagram:hover{
+    color: #ff0084;
+
+}
+
+.social-facebook:hover{
+    color: #3b5998;
+
+}
+
+.social-twitter:hover{
+    color: #55acee;
+}
+
+.social-google:hover{
+    color: #dd4b39;
+
+}
+
+.social-linkedin:hover{
+    color: #0e76a8;
+
+}
+
+.social-tiktok:hover{
+    color: #000000;
+
 }
 
 .border-top{
@@ -143,6 +166,39 @@ img{
 
 .position-relative{
     position: relative;
+}
+
+.product-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0 1rem;
+    align-items: flex-end;
+    opacity: 0;
+}
+
+.product:hover .product-overlay{
+    opacity: 1;
+}
+
+.product img{
+    filter: grayscale(40%);
+}
+
+.product:hover img{
+    /*filter: grayscale(40%);*/
+    opacity: 0.5;
+}
+
+.product-overlay ul li:first-of-type{
+    transform: translateX(-4px);
+}
+
+.product-overlay ul li:last-of-type{
+    transform: translateX(4px);
 }
 
 .d-block{
@@ -473,7 +529,7 @@ nav{
     }
 
     .navbar-nav a{
-        color: gray;
+        color: darkgray;
         text-transform: capitalize;
         letter-spacing: 0.1rem;
         font-weight: bold;
@@ -483,7 +539,7 @@ nav{
     }
 
     .navbar-nav a:hover{
-        color: chocolate;
+        color: dimgray;
         text-decoration: underline;
     }
 
@@ -506,6 +562,90 @@ nav{
         display: none;
     }
 
+}
+
+.brackets a::before,
+.brackets a::after{
+    display: inline-block;
+    opacity: 0;
+}
+
+.brackets a::before{
+    margin-right: 10px;
+    content: '[';
+    transform: translateX(20px);
+}
+
+.brackets a::after{
+    margin-left: 10px;
+    content: ']';
+    transform: translateX(-20px);
+}
+
+.brackets a:hover::before,
+.brackets a:hover::after,
+.brackets a:focus::before,
+.brackets a:focus::after{
+    transform: translateX(0px);
+    opacity: 1;
+
+}
+
+.hero {
+    background-image: url("../img/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*min-height: 100vh;*/
+    min-height: 15em;
+    height: 20em;
+}
+
+.hero header{
+    padding: 8em 0% 8em 0%;
+}
+
+.hero h1{
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.over-footer{
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 15em;
+    height: 20em;
+}
+
+.over-footer article{
+    padding: 6rem 0;
+}
+
+.btn-browse{
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    background-color: darkred;
+    background: linear-gradient(red, darkred);
+    color: white;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+
+}
+
+.btn-browse:hover{
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(darkred, red);
+}
+
+.lg-gold{
+    background: linear-gradient(to top, darkgray,
+    darkgray, white);
+    background-size: cover;
+    color: white;
+    font-size: 1.2em;
 }
 
 /*slider*/
